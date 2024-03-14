@@ -1,0 +1,53 @@
+@import url('https://fonts.cdnfonts.com/css/avenir');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.invoice{
+    background-color: rgb(46, 245, 245);  
+    margin: auto 20% auto 20%;
+    border-radius: 30px;
+    padding: 0 30px 30px 30px;
+}
+
+h1, h2 {
+    text-align: center;
+    padding: 10px;
+    font-weight: bolder;
+}
+
+.row25{
+    width: 25%;
+    font-size: 
+    x-large;
+}
+
+.row75{
+    width: 75%;
+    font-size: x-large;
+}
+
+#total-bill{
+    background-color: #0334;
+    width: 500px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 100px auto 20px auto;
+}
+
+#bill, #final-total{
+    display: inline-block;
+    font-size: 25px;
+    margin: 0;
+}
+
+#final-total{
+    background-color: white;
+    color: #334;
+    padding: 15px;
+    border-radius: 0 10px 10px 0;
+    margin: 0 0 0 50px;
+}
+

@@ -1,0 +1,289 @@
+/* Bottom To Top Button */
+.bottomToTop {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  color: black;
+  z-index: 10;
+}
+
+.upButton {
+  font-size: 50px;
+  background-color: rgb(154, 154, 164);
+  color: black;
+}
+
+.upButton:hover {
+  color: whitesmoke;
+}
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+body{
+
+  background: url("../images/image3.jpg");
+  background-size: cover;
+    font-family: 'Lato', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.formbody {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  
+}
+.form-box {
+ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+    max-width: 1200px;
+    height: 850px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+  }
+
+  .form-box h1 {
+    color: #0896a9;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: avenir;
+  }
+  
+  .form-box h2 {
+    text-align: center;
+    margin-top: 0;
+  }
+  
+  .form-box label {
+    display: block;
+    font-family: avenir;
+    margin-top: 50px;
+    margin-bottom: 10px;
+   
+
+  }
+  
+  .form-box input[type="radio"] {
+    display: none;
+  }
+  
+  .form-box .radio-label {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 5px 30px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s;
+  }
+  
+  .form-box .radio-label:hover {
+    
+    background: 
+    linear-gradient(#eee, #eee) padding-box,
+    linear-gradient(to right, #24C6DC 0%, #514A9D  51%, #24C6DC  100%) border-box;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border: 1px solid transparent;
+  }
+  
+  .form-box input[type="radio"]:checked + .radio-label {
+    background-image: linear-gradient(to right, #24C6DC 0%, #514A9D  51%, #24C6DC  100%);
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    color: #fff;
+  }
+  
+  .form-box select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-family: avenir ;
+    border-radius: 5px;
+    height: 40px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s;
+  }
+
+  .form-box select:hover {
+    
+    background: 
+    linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(to right, #24C6DC 0%, #514A9D  51%, #24C6DC  100%) border-box;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border: 1px solid transparent;
+  }
+  
+  .form-box select:focus {
+    outline: none;
+    background: 
+    linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(to right, #24C6DC 0%, #514A9D  51%, #24C6DC  100%) border-box;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border: 1px solid transparent;
+  }
+  
+  .form-box textarea {
+    display: block;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: avenir ;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s;
+  }
+
+  .form-box textarea:hover {
+    
+    background: 
+    linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(to right, #24C6DC 0%, #514A9D  51%, #24C6DC  100%) border-box;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border: 1px solid transparent;
+  }
+  
+  .form-box textarea:focus {
+    outline: none;
+    background: 
+        linear-gradient(#fff, #fff) padding-box,
+        linear-gradient(to right, #24C6DC 0%, #514A9D  51%, #24C6DC  100%) border-box;
+        transition: 0.5s;
+        background-size: 200% auto;
+        border: 1px solid transparent;
+
+  }
+  
+  .form-box input[type="submit"] {
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(to right, #24C6DC 0%, #514A9D  51%, #24C6DC  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    border-radius: 10px;
+    display: block;
+    
+  }
+  
+  .form-box input[type="submit"]:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+  }
+
+
+  .thankyou {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .thankyou {
+    font-family: avenir;
+    font-size: 30px;
+    text-align: center;
+  }
+
+
+         
+  .error-outline {
+    outline: 1px solid red;
+
+  }
+
+
+ 
+  @media (max-width: 767px) {
+    .form-box {
+      width: 80%;
+      padding: 20px;
+      height: auto;
+    }
+  
+    .form-box h1 {
+      font-size: 28px;
+    }
+  
+    .form-box label {
+      margin-top: 30px;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    .form-box {
+      padding: 30px;
+      height: auto;
+    }
+  
+    .form-box h1 {
+      font-size: 32px;
+    }
+  
+    .form-box label {
+      margin-top: 40px;
+    }
+  }
+  
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .form-box {
+      padding: 30px;
+      height: auto;
+    }
+  
+    .form-box h1 {
+      font-size: 36px;
+    }
+  
+    .form-box label {
+      margin-top: 40px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .form-box {
+      padding: 40px;
+      height: 850px;
+    }
+  
+    .form-box h1 {
+      font-size: 40px;
+    }
+  
+    .form-box label {
+      margin-top: 50px;
+    }
+  }
+  

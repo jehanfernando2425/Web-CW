@@ -1,0 +1,518 @@
+@import url('https://fonts.cdnfonts.com/css/avenir');
+@import url("https://fonts.googleapis.com/css?family=Sofia");
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Bottom To Top Button */
+.bottomToTop {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  color: black;
+  z-index: 10;
+}
+
+.upButton {
+  font-size: 50px;
+  background-color: rgb(154, 154, 164);
+  color: black;
+}
+
+.upButton:hover {
+  color: whitesmoke;
+}
+  
+
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+    .text-container {
+      position: relative;
+      text-align: center;
+      line-height: 3rem; /* match the font-size of main-text */
+      
+    }
+    
+    .overlay-text {
+      position: absolute;
+      top: 140%;
+      left: 50%;
+      transform: translate(-50%, -120%);
+      font-size: 3rem;
+      color: rgb(0, 0, 0);
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      z-index: 0;
+    }
+    
+    .main-text {
+      font-size: 8rem;
+      font-family: "Sofia", sans-serif;
+      color: rgb(218, 218, 218);
+      text-align: center;
+      z-index: 0;
+      
+    }
+
+    .main-text, .overlay-text{
+      margin: 10px;
+    }
+    .heading{
+
+      font-weight: 500;
+      text-align: center;
+      font-size: 30px;
+      color: #000;
+    }
+
+    .description {
+      font-size: 20px;
+      text-align: center;
+      line-height: 2;
+      margin-top: 5%;
+      margin-left: 18%;
+      margin-right: 18%;
+      
+
+    }
+
+
+    /* -------------- */
+
+
+
+    .slideshow-container {
+      position: relative;
+      display: flex;
+      align-items: flex-start;
+      background: #fff;
+      width: 100%;
+      height: 800px;
+      position: relative;
+      overflow: hidden;
+    }
+
+ 
+    .slideshow-container .single-box img {
+      position: absolute;
+      min-width: 100%;
+      min-height: 100%;
+      height: 1000px;
+      background: #000;
+      backface-visibility: hidden;
+      opacity: 0;
+      transform: scale(1.5) rotate(15deg);
+      -webkit-animation: animate 48s infinite;
+      animation: animate 48s infinite;
+    }
+    .slideshow-container .single-box:nth-child(5) img {
+      -webkit-animation-delay: 8s;
+      animation-delay: 8s;
+    }
+    .slideshow-container .single-box:nth-child(4) img {
+      -webkit-animation-delay: 16s;
+      animation-delay: 16s;
+    }
+    .slideshow-container .single-box:nth-child(3) img {
+      -webkit-animation-delay: 24s;
+      animation-delay: 24s;
+    }
+    .slideshow-container .single-box:nth-child(2) img {
+      -webkit-animation-delay: 32s;
+      animation-delay: 32s;
+    }
+    .slideshow-container .single-box:nth-child(1) img {
+      -webkit-animation-delay: 40s;
+      animation-delay: 40s;
+    }
+
+    @keyframes animate {
+      25% {
+        opacity: 1;
+        transform: scale(1) rotate(0);
+      }
+      40% {
+        opacity: 0;
+      }
+    }
+
+
+    /* -------------- */
+
+
+
+
+
+
+
+
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+      margin: 0 auto;
+      max-width: 80%;
+    }
+
+
+
+    
+    .grid-item {
+      position: relative;
+    }
+
+    .grid-item:hover {
+      background: 
+    
+      linear-gradient(to right, #24C6DC 0%, #514A9D  51%, #24C6DC  100%) border-box;
+      transition: 0.5s;
+      
+      background-size: 200% auto;
+      border: 3px solid transparent;
+      
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+    
+    .grid-item:hover .overlay {
+      opacity: 1;
+    }
+
+
+    
+    .caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(transparent, rgba(0, 0, 0, 1)); /* black gradient */
+      color: #fff;
+      padding: 10px;
+      font-family: avenir;
+      font-weight: 500;
+      font-size: 40px;
+      text-align: center;
+      transition: bottom 0.8s ease-in-out; /* add transition effect */
+    }
+    
+    .grid-item:hover .caption {
+      transition: bottom 0.8s ease-in-out; /* add transition effect */
+      font-size: 30px;
+    }
+
+ 
+
+    
+    .item1 {
+      grid-row: 1/3;
+      grid-column: 1/2;
+    }
+    
+    .item2 {
+      grid-row: 1/2;
+      grid-column: 2/3;
+    }
+    
+    .item3 {
+      grid-row: 2/3;
+      grid-column: 2/3;
+    }
+    
+    .item4 {
+      grid-row: 3/4;
+      grid-column: 1/3;
+      height: 300px;
+    }
+    
+    .galleryimg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+
+    
+/* -------------- */
+
+
+
+    .goforcomments {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background: url("../images/formimage4.jpg");
+    height:550px;
+    background-size:cover;
+    background-position: center;
+    }
+
+
+.goforcomments h1 {
+  text-align: center;
+  font-size: 35px;
+  display: block;
+  color: #fff;
+  font-family: avenir;
+  font-weight: 500;
+  
+}
+
+.submit{
+width: 100%;
+height: 100%;
+font-size: 15px;
+background-color: rgba(0, 0, 0, 0.1);
+color: #fff;
+border: 2px solid #fff; 
+text-decoration: none;
+border-radius: 5px;
+}
+
+.submit:hover {
+  
+  background-color: #fff;
+  font-size: 18px;
+  background-position: right center;
+  color: #009eb3;
+
+  text-decoration: none;
+}
+
+.btcontainer {
+  display: block;
+
+  height: 40px;
+  width: 20%;
+}
+
+.shopcards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.card {
+  width: 50%;
+  height: 80%;
+  border-radius: 25px;
+  float: left;
+  margin: 0 10px;
+  background-color: #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.card p {
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.shophome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 4%;
+
+}
+
+.shopbtcontainer {
+  display: block;
+  padding-top: 2%;
+  height: 40px;
+  width: 20%;
+}
+
+
+
+.shopbtn{
+  width: 100%;
+  height: 40px;
+  font-size: 13px;
+  background-color: #f0f0f0;
+  color: #009eb3;
+  border: 2px solid #009eb3; 
+  text-decoration: none;
+  border-radius: 5px;
+  }
+  
+  .shopbtn:hover {
+    
+    outline: none;
+    background: 
+    linear-gradient(to right, #24C6DC 0%, #514A9D  51%, #24C6DC  100%) border-box;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: #fff;
+    border: 1px solid transparent;
+  }
+    hr {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 3%;
+      margin-bottom: 3%;
+    }
+    .content {
+      background-color: #fcfcfc;
+      padding-top: 60px;
+      position:relative;
+      display: flex;
+      flex-direction: column;
+      margin-left: -8px; 
+      margin-right: -8px; 
+    }
+    /* default styles */
+
+/* add this to the end of the file to apply the styles only for screens with max-width of 600px */
+@media (max-width: 600px) {
+
+  /* adjust slideshow container height */
+  .slideshow-container {
+    height: 400px;
+  }
+
+  .slideshow-container .single-box img {
+  
+      width: 100%;
+      height: auto;
+      max-height: 100%;
+      object-fit: cover;
+    
+  }
+
+  /* adjust font sizes */
+  .main-text {
+    font-size: 4rem;
+  }
+  .overlay-text {
+    font-size: 1.5rem;
+  }
+  .heading {
+    font-size: 24px;
+  }
+  .description {
+    font-size: 16px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .caption {
+    font-size: 20px;
+  }
+
+  /* adjust grid layout */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    margin: 0 auto;
+    max-width: 90%;
+  }
+  .item1, .item2, .item3, .item4 {
+    grid-row: auto;
+    grid-column: auto;
+    height: 200px;
+  }
+  
+  /* adjust card layout */
+  .shopcards-container {
+    flex-direction: column;
+    height: auto;
+    overflow: visible;
+  }
+
+  .shopbtn{
+    width: 100%; 
+    height: 40px;
+    font-size: 13px;
+    background-color: #f0f0f0;
+    color: #009eb3;
+    border: 2px solid #009eb3; 
+    text-decoration: none;
+    border-radius: 5px;
+    }
+    
+    .shopbtn:hover {
+      
+      outline: none;
+      background: 
+      linear-gradient(to right, #24C6DC 0%, #514A9D  51%, #24C6DC  100%) border-box;
+      transition: 0.5s;
+      background-size: 200% auto;
+      color: #fff;
+      border: 1px solid transparent;
+    }
+
+  .card {
+    width: 90%;
+    height: auto;
+    padding-bottom: 5%;
+    margin: 20px 0;
+  }
+
+  .goforcomments {
+    background: url("../images/formimage4.jpg");
+    height:500px;
+    background-size:cover;
+    background-position:20%;
+      
+  }
+  .submit{
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #fff;
+    border: 2px solid #fff; 
+    text-decoration: none;
+    border-radius: 5px;
+    }
+    
+    .submit:hover {
+      
+      background-color: #fff;
+      font-size: 18px;
+      background-position: right center;
+      color: #009eb3;
+      text-decoration: none;
+    }
+  .btcontainer {
+    display: block;
+    height: 40px;
+    width: 50%;
+  }
+}

@@ -1,0 +1,71 @@
+@import url('https://fonts.cdnfonts.com/css/avenir');
+
+body {
+    margin: 0;                                            
+  }
+
+  *{
+    font-family: 'Poppins', sans-serif;
+  }
+/* Video Clip  */
+#introVideo {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    opacity: 50%;
+  }
+
+  /* Logo  */
+.Titlelogo {
+    position: relative;
+    margin-top:3%;
+    width: 100%;
+    height: auto;
+  }
+
+/* Student Container */
+.studentContainer {
+    margin-top:5%;
+    margin-left: 10%;
+    height: 100%;
+    width: 80%;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    color: aliceblue;
+  }
+  
+  .studentBox {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: static;
+    height: 100%;
+    width: 25%;
+    margin: 1%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 5px black;
+  }
+
+  .studentBox > img {
+    object-fit: cover;
+  }
+
+/* studentBox information */
+p {
+    text-align: center;
+    line-height: 2vw;
+  }
+  
+  .studentTitle {
+    font-size: 2rem;
+  }
+  
+  .studentName {
+    font-size: 1.rem;
+  }
+  
+  .studentId {
+    font-size: 1.1rem;
+  }
+  
+  

@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css?family=Sofia");
+
+body{
+  margin: 0;
+}
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Slide Images */
+.box {
+  display: flex;
+  align-items: flex-start;
+  background: #fff;
+  height: 550px;
+  width:100%;
+  overflow: hidden;
+  position: relative;
+}
+.box .single-box img {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  height: 100%;
+  background: #000;
+  backface-visibility: hidden;
+  opacity: 0;
+  transform: scale(1.5) rotate(15deg);
+  animation: animate 32s infinite;
+}
+.box .single-box:nth-child(3) img {
+  animation-delay: 8s;
+}
+.box .single-box:nth-child(2) img {
+  animation-delay: 16s;
+}
+.box .single-box:nth-child(1) img {
+  animation-delay: 24s;
+}
+@keyframes animate {
+  25% {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
+.content {
+    background-color: #eeeeee;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .middle {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+
+  .text-container {
+    position: relative;
+    text-align: center;
+    line-height: 3rem; /* match the font-size of main-text */
+    font-size: 20px;
+  }
+
+  .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -120%);
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
+  
+  .main-text {
+    font-style: italic;
+    font-family: "Sofia", sans-serif;
+    font-size: 5rem;
+    letter-spacing: 2;
+    color: rgb(218, 218, 218);
+    text-align: center;
+    z-index: 0;
+  }
+
+  .main-text, .overlay-text{
+    margin: 3%;
+  }
+/* --------------------- */
+p {
+    position: relative;
+    text-align: center;
+}
+
+h2 {
+    position: relative;
+    text-align: center;
+
+}
+.para {
+    position: relative;
+    text-align: center;
+    line-height: 1.8;
+    padding-left: 15%;
+    margin-right: 15%;
+    font-size: 18px;
+}
+
+.image-grid {
+  justify-content: center;
+  align-items: center;
+  display: block;
+}
+
+.image-grid > img{
+
+  border-radius: 30px;
+}
+
+
+
+/*Footer*/
+.pageeditor {
+  width: 100%;
+  padding:10px ;
+  background-color: #8df;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.copyright {
+  padding:2px 2px 2px 2px;
+  text-align: center;
+}
+
+/* Bottom To Top Button */
+.bottomToTop {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  color: black;
+  z-index: 10;
+}
+
+.upButton {
+  font-size: 50px;
+  background-color: rgb(154, 154, 164);
+  color: black;
+}
+
+.upButton:hover {
+  color: whitesmoke;
+}
+  
+

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz | Explore Sri Lanka</title>
+    <link rel="stylesheet" href="../CSS/quiz.css">
+    <link rel="stylesheet" href="../CSS/navbar.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <!-- BoxIcons Links -->
+    <link
+    href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+    rel="stylesheet"
+    />
+    <!--Tab Icon-->
+    <link
+    rel="icon"
+    href="../Images/logo (1).png"
+    type="image/icon type">
+    <!--Font Files-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <a href="#" class="logo"><img src="../Images/logo.png" alt="Logo"></a>
+        <ul class="nav-links">
+            <li><a href="../HTML/MainPage.html">Home</a></li>
+            <li><a href="../HTML/contentpage.html" >Content Page</a></li>
+            <li><a href="../HTML/form.html">Form</a></li>
+            <li><a href="../HTML/gallery.html">Gallery</a></li>
+            <li><a href="../HTML/shop.html">Shop</a></li>
+            <li><a href="../HTML/quiz.html" style="color: darkorange;">Quiz</a></li>
+            <li><a href="../HTML/sitemap.html">Site map</a></li>
+            <li><a href="../HTML/showInfo.html">About us</a></li>
+        </ul>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <script src="/javascript/Navbar.js"></script>
+    <div class="infobox">
+        <div class="infotitle">
+            <h2>Quiz</h2>
+            <span>The instructions for the Quiz</span>
+        </div>
+        <div class="infolist">
+            <div class="info">1. You will have only 60 seconds to complete the Quiz.</div>
+            <div class="info">2. You can only select an answer once.</div>
+            <div class="info">3. You can't select any option once time goes off.</div>
+            <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+            <div class="info">5. You'll get points on the basis of your correct answers.</div>
+            <div class="info">6. In case the time runs out while you are doing the quiz the <br> correct answer will be
+                shown then a continue button will appeare.</div>
+        </div>
+
+        <div class="buttons">
+            <button class="continue">Start Quiz</button>
+        </div>
+    </div>
+    <div class="quizbox">
+        <header>
+            <div class="title">Tourism Quiz</div>
+            <div class="timer">
+                <div class="timetext">Time Left:</div>
+                <div class="timerTime">60</div>
+            </div>
+        </header>
+        <section>
+            <div class="question">
+                <!-- we insert the question tru javaScript -->
+            </div>
+            <div class="answerlist">
+                <!-- we insert the options tru javaScript -->
+            </div>
+        </section>
+        <footer>
+            <div class="questionNo">
+                <!-- we insert this tru javaScript -->
+            </div>
+            <button class="next"><span>Next Quiz</span></button>
+        </footer>
+    </div>
+    <div class="resultbox">
+        <div class="completeText">You've completed the quiz</div>
+        <div class="scoreText">
+            <!-- we insert this tru javaScript -->
+        </div>
+        <div class="buttons">
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+    <script src="../JavaScript/questions.js"></script>
+    <script src="../JavaScript/quiz.js"></script>
+    <script src="../JavaScript/navbar.js"></script>
+
+    <!--Bottom to top link-->
+    <div class="bottomToTop">
+        <a href="#top">
+          <i class="bx bx-chevron-up-circle upButton"></i>
+        </a>
+    </div>
+
+    <!--Footer-->
+    <div class="quizFooter">
+        <div class="pageeditor">
+            <a href="../HTML/page_editor3.html" style="text-decoration: none;">Page Editor | Lakvindu Siriwardana</a>
+          </div>
+            <div class="footer-top">
+              <div class="logofooter">
+                <img src="../Images/logo.png" alt="Example Company Logo">
+              </div>
+      
+              <div class="footer-links">
+                <ul>
+                  <li><a href="../HTML/MainPage.html">Home</a></li>
+                  <li><a href="../HTML/form.html">Form</a></li>
+                  <li><a href="../HTML/gallery.html">Gallery</a></li>
+                  <li><a href="../HTML/shop.html">Shop</a></li>
+                  <li><a href="../HTML/quiz.html" style="color: darkorange;">Quiz</a></li>
+                  <li><a href="../HTML/sitemap.html">Site Map</a></li>
+                  <li><a href="../HTML/showInfo.html">About Us</a></li>
+                </ul>
+              </div>
+              <div id="verticalLine"></div>
+              <div class="team-members">
+                <h4>Our Team</h4>
+                <ul>
+                  <li>
+                    <img src="../Images/profilepictures/student_1.jpg" alt="Team Member 1">
+                    <p>Jehan Ferando</p>
+                  </li>
+                  <li>
+                    <img src="../Images/profilepictures/student_2.jpg" alt="Team Member 2">
+                    <p>Mineth Vismitha</p>
+                  </li>
+                  <li>
+                    <img src="../Images/profilepictures/student_3.jpeg" alt="Team Member 3">
+                    <p>Lakvindu Siriwardana</p>
+                  </li>
+                  <li>
+                    <img src="../Images/profilepictures/student_4.jpg" alt="Team Member 4">
+                    <p>Sanuka Alles</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <hr class="hrdown">
+            <div class="pageEnd">
+              <p>&copy; All Rights Reserved - Explore | Sri Lanka</p>   
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+@import url('https://fonts.cdnfonts.com/css/avenir');
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    background-color: #ffffff;
+    height: 75px;
+    position: fixed;
+    z-index: 20;
+    width: 100%;
+  }
+
+img.Logo {
+    height: 50px;
+    float: left;
+    background-color: #ffffff;
+    margin-top: 16px ;
+    margin-bottom: 16px;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    float: right;
+}
+      
+nav ul li{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+      
+
+nav ul li a{
+    color: #333;
+    display: block;
+    padding: 10px 10px;
+    border-radius: 1px;
+}
+
+nav li a.logo {
+        padding: 0;
+      }
+    nav ul li a:hover {
+      background: 
+      linear-gradient(#fff, #fff) padding-box,
+      linear-gradient(to right, #24C6DC 0%, #514A9D  51%, #24C6DC  100%) border-box;
+      transition: 0.5s;
+      background-size: 200% auto;
+      border: 1px solid transparent;
+    }
+
+.current{
+  color: darkorange;
+}

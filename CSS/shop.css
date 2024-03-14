@@ -1,0 +1,505 @@
+@import url('https://fonts.cdnfonts.com/css/avenir');
+
+body {
+  margin: 0;                                           
+  box-sizing: border-box;
+  background-color: white;
+  color: black;
+}
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+  
+/* Slide Images */
+.box {
+  display: flex;
+  align-items: flex-start;
+  background: #fff;
+  height: 550px;
+  width:100%;
+  overflow: hidden;
+  position: relative;
+}
+.box .single-box img {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  height: 100%;
+  background: #000;
+  backface-visibility: hidden;
+  opacity: 0;
+  transform: scale(1.5) rotate(15deg);
+  animation: animate 32s infinite;
+}
+.box .single-box:nth-child(3) img {
+  animation-delay: 8s;
+}
+.box .single-box:nth-child(2) img {
+  animation-delay: 16s;
+}
+.box .single-box:nth-child(1) img {
+  animation-delay: 24s;
+}
+@keyframes animate {
+  25% {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
+hr {
+  border-top: 1px solid rgb(0, 0, 0);
+}
+
+#total{
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  color: white;
+  position:sticky;
+  left: 0;
+  top: 80px;
+  padding: 5px;
+  font-size: 40px;
+  background-color: rgba(0, 0, 0, 0.567);
+  border-radius: 0 10px 10px 0;
+  z-index: 5;
+}
+
+.top_things{
+  text-align: center;  
+}
+
+/* Flip Card*/
+.flexbox1{
+  display: flex;
+}
+.flexbox1 > div {
+  font-size: larger;
+  text-align: center;
+  margin: auto;
+  padding: 5px;
+  color: rgb(255, 254, 254);
+  height: 300px;
+  width: 300px;
+}
+.flip_card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+.flip_card_inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 18px;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.flip_card:hover .flip_card_inner {
+  transform: rotateY(180deg);
+}
+.flip_card_front, .flip_card_back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.flip_card_front {
+  background-color: #bbb;
+  color: black;
+}
+.flip_card_back {
+  background-color: #2980b9;
+  color: rgb(255, 255, 255);
+  transform: rotateY(180deg);
+  opacity: 40%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.flip{
+  object-fit: cover;
+  width: 300px;
+  height: 100%;
+}
+
+.top_pics{
+  object-fit: none;
+}
+
+.flexbox2{
+  display: flex;
+  margin: 2%;
+}
+
+.flexbox2 > div {
+  font-size: large;
+  text-align: center;
+  margin: auto;
+  padding: auto;
+  width: 300px;
+  height: auto;
+}
+
+.flexbox2 > p {
+  text-decoration: none;
+}
+
+/* Bottom To Top Button */
+.bottomToTop {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  color: black;
+  z-index: 10;
+}
+
+.upButton {
+  font-size: 50px;
+  background-color: rgb(154, 154, 164);
+  color: black;
+}
+
+.upButton:hover {
+  color: whitesmoke;
+}
+
+/*Buttons*/
+.card-button{border: none;
+  background-color: gainsboro;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 0;
+  width: 60px;
+  margin: 0;
+  display: inline-block;
+  text-align: center;
+}
+
+.card-button.plus{
+  font-family: 'Roboto Slab', serif;
+  border-radius: 15px 0 0 15px;
+  cursor: pointer;
+}
+
+.card-button.minus{
+  font-family: 'Roboto Slab', serif;
+  border-radius: 0 15px 15px 0;
+  cursor: pointer;
+}
+
+/*Form*/
+.form_box{
+  background-color: rgb(150 233 229);
+  color: black;
+  font-size: 25px;
+  margin: 5% auto 5% auto;
+  width: 45%;
+  border-radius: 30px 25px 25px 25px;
+  filter: drop-shadow(2px 5px 20px rgba(0,0,0.3) );
+  height: 35%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.form_box-size{
+  margin:0;
+  padding: 15px;
+  width: 80%;
+  border-radius: 110px;
+  font-family: 'Comic Neue', cursive;
+  font-size: 18px;
+}
+
+input{
+  padding:10px;
+  font-size: 16px;
+  border-radius: 15px;
+}
+
+.col-25{
+  float: left;
+  width: 40%;
+  margin-left: 4px;
+  margin-top: 6px;
+}
+.col-75{
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  border-radius: 110px;
+}
+
+.row:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card-title{
+  text-align: center;
+  font-size: 40px;
+  background-color:#0334;
+  color: black;
+  border-radius: 150px;
+  margin-top: 2%;                
+}
+
+.note{
+  text-align: center;
+}
+
+/* Section Breaker */
+.sectionBreaker {
+  background-color: black;
+  border: 1px solid black;
+  margin: 2%;
+}
+
+/* Products */
+/* Section Container */
+.sectionContainer {
+  position: relative;
+  margin-top: 5px;
+  padding: 10px ;
+}
+
+/* Section Title */
+.sectionTitle {
+  font-size: xx-large;
+  text-align: center;
+  margin: 0;
+}
+
+/* Product Container */
+.productContainer {
+  margin: auto;
+  display: flex;
+}
+
+.productBox {
+  width: 25%;
+  height: 420px;
+  margin: 5px;
+  background-color: #edf1f3;
+  align-items: center;
+}
+
+.productBox:hover {
+  border: none;
+  z-index: 4; background: 
+  linear-gradient(#fff, #fff) padding-box,
+  linear-gradient(to right, #24C6DC 0%, #514A9D  51%, #24C6DC  100%) border-box;
+  transition: 0.5s;
+  background-size: 200% auto;
+  border: 2px solid transparent;
+  box-shadow: 0px 0px 4px 2px rgb(94, 90, 90);
+}
+
+/* Product Image */
+.productImageBox {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.productImage {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.price_tag {
+  background-color: rgb(203, 205, 209);
+  padding: 5px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border-radius: 6px;
+  color: rgb(161, 41, 41);
+}
+
+.productBox:hover{
+  opacity: 1;
+}
+
+.buyButton:hover {
+  background-color: rgb(154, 154, 164);
+  color: white;
+}
+
+/* Product Ination */
+.productInformation {
+  width: 100%;
+  height: 100px;
+}
+
+.productName {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 25px;
+  margin-top: 10px;
+  margin-left: 15px;
+  overflow: hidden;
+  padding: 0;
+  color: black;
+}
+
+#purchase {
+  display: block;
+  margin: 20px auto 30px auto;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 15px;
+  background-color: black;
+  color: white;
+  width: 60%;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#purchase:hover {
+  background-color: white;
+  color: black;
+}
+/*Footer*/
+.pageeditor {
+  width: 100%;
+  padding:10px ;
+  background-color: #8df;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.copyright {
+  padding:2px 2px 2px 2px;
+  text-align: center;
+}
+  
+/*Invoice*/
+#final {
+  width: 900px;
+  background-color:lightgray;
+  position:relative;
+  left:50%;
+  transform: translateX(-50%);
+  border-radius: 30px;
+  text-align: center; 
+  padding: 0 30px 30px 30px;
+  display: none;
+
+}
+
+#final #final-title {
+  color: white;
+  font-size: 30px;
+  padding: 20px;
+  background-color:#0334;
+  border-radius:  0px 0px 20px 20px;
+  margin-top: 15%
+}
+
+#final input {
+  padding: 10px;
+  width: 35%;
+  border-radius: 15px;
+  font-size: 15px;
+}
+
+#final form {
+  text-align: left;
+}
+
+#invoice-title {
+  text-align: center;
+  margin: 70px 0 0 0;
+  padding: 0;
+  color: black;
+  font-size: 30px;
+}
+
+.finalitem{
+  padding: 40px;
+  display: none;
+}
+
+.final-img{
+  width: 152px;
+  height: 152px;
+  border-radius: 10px;
+  object-fit: cover;
+  float: left;
+}
+
+.detail-card{
+  width: 300px;
+  margin-left: 160px;
+  text-align: left;
+  padding: 10px;
+}
+
+.item-name{
+  background-color: black;
+  border-radius: 6px;
+  margin: 0;
+  display: inline-block;
+  padding: 8px;
+  font-size: 30px;
+}
+
+.product-info{
+  margin-top: 10px;
+  background-color: #0334;
+  border-radius: 6px;
+  padding: 10px;
+  color: white;
+}
+
+.finalquantity{
+  margin: 0;
+}
+
+.finalcost{
+  margin: 5px 0 0 0;
+}
+
+#total-bill{
+  background-color: #0334;
+  width: 500px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 100px auto 20px auto;
+}
+
+#bill, #final-total{
+  display: inline-block;
+  font-size: 25px;
+  margin: 0;
+}
+
+#final-total{
+  background-color: white;
+  color: #334;
+  padding: 15px;
+  border-radius: 0 10px 10px 0;
+}
+
+.current{
+  color: darkorange;
+}

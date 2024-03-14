@@ -1,0 +1,310 @@
+*{
+    font-family: 'Poppins', sans-serif;
+  }
+  
+body {
+    background-image: url(/images/wildlife52.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Bottom To Top Button */
+.bottomToTop {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    color: black;
+    z-index: 10;
+  }
+  
+  .upButton {
+    font-size: 50px;
+    background-color: rgb(154, 154, 164);
+    color: black;
+  }
+  
+  .upButton:hover {
+    color: whitesmoke;
+  }
+    
+/* info box */
+.infobox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 640px;
+    background: #f0f0f0;
+    border: 5px solid aqua;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 16px 4px rgba(0, 0, 0, 0.6);
+    user-select: none;
+    margin-top: 5%;
+}
+.infobox .infotitle{
+    margin-top: 6%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80px;
+    font-size: 22px;
+    font-weight: 600;
+    border-bottom: 3px solid lightgrey;
+}
+.infobox .infolist{
+    padding: 15px 25px;
+    font-size: 22px;
+    line-height: 1.2;
+}
+.infobox .infolist .info{
+    margin-bottom: 15px;
+}
+.infobox .infolist .info:last-child{
+    margin-bottom: 0;
+}
+.infobox .buttons{
+    margin: 2% 0;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 3px solid lightgray;
+}
+.infobox .buttons .continue{
+    height: 50px;
+    width: 120px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 15px;
+    border: 3px solid aqua;
+}
+.infobox .buttons .continue:hover{
+    background: lightblue;
+}
+
+/* quiz box */
+.quizbox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 640px;
+    background: #f0f0f0;
+    border: 5px solid aqua;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px 4px rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease;
+    user-select: none;
+    opacity: 0;
+    pointer-events: none;
+    margin-top: 4%;
+}
+/* header */
+.quizbox header{
+    height: 80px;
+    padding: 0 30px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px 15px 0 0;
+    border-bottom: 3px solid lightgray;
+}
+.quizbox header .title{
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 30px;
+}
+.quizbox header .timer{
+    width: 200px;
+    display: flex;
+    background: rgba(137, 224, 253, 0.755);
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 15px;
+}
+.quizbox header .timer .timetext{
+    font-size: 20px;
+    font-weight: 600;
+    user-select: none;
+}
+.quizbox header .timer .timerTime{
+    border: 2px solid;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-size: 20px;
+    font-weight: 600;
+    user-select: none;
+}
+/* section */
+.quizbox section{
+    padding: 20px 30px;
+    background: #f0f0f0;
+}
+.quizbox section .question{
+    font-size: 24px;
+    font-weight: 600;
+}
+.quizbox section .answerlist{
+    padding: 20px 0;
+    display: block;
+}
+.quizbox section .answerlist .option{
+    background: aliceblue;
+    border: 1px solid aqua;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-size: 20px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.quizbox section .answerlist .option:hover{
+    background: lightblue;
+    border: 2px solid rgb(0, 140, 255);
+}
+.quizbox section .answerlist .option.correct{
+    color: #19ac3b;
+    background: rgba(144, 238, 144, 0.4);
+    border: 2px solid green;
+}
+.quizbox section .answerlist .option.incorrect{
+    color: #bc1021;
+    background: rgba(228, 28, 28, 0.3);
+    border: 2px solid red;
+}
+.quizbox section .answerlist .option.disabled{
+    pointer-events: none;
+}
+/* footer */
+.quizbox footer{
+    border-top: 3px solid lightgray;
+    padding: 20px 30px;
+    background: #f0f0f0;
+    display: flex;
+    border-radius: 0 0 15px 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quizbox footer .questionNo span{
+    display: flex;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.quizbox footer button{
+    background: white;
+    height: 60px;
+    width: 160px;
+    font-size: 20px;
+    font-weight: 600;
+    border: 3px solid aqua;
+    border-radius: 15px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+}
+.quizbox footer button.show{
+    opacity: 1;
+    pointer-events: auto;
+}
+.quizbox footer button:hover{
+    background: rgba(0, 123, 255, 0.2);
+}
+
+/* reslut box */
+.resultbox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 640px;
+    background: #f0f0f0;
+    border: 5px solid aqua;
+    border-radius: 15px;
+    transform: translate(-50%,-50%) scale(0.9);
+    transition: all 0.3s ease; 
+    box-shadow: 0 8px 16px 4px rgba(0, 0, 0, 0.6);
+    user-select: none;
+    opacity: 0;
+    pointer-events: none;
+    margin-top: 4%;
+}
+.resultbox .completeText{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+}
+.resultbox .scoreText{
+    padding: 20px 100px;
+    display: block;
+    border-top: 3px solid lightgray;
+    border-bottom: 3px solid lightgray;
+}
+.resultbox .scoreText .result_item{
+    font-size: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.resultbox .buttons{
+    margin:  2% 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+.resultbox .buttons button{
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    font-weight: 600;
+    border: 3px solid aqua;
+    border-radius: 15px;
+    cursor: pointer;
+}
+/* active */
+.resultbox.activeResult,
+.quizbox.activeQuiz{
+    opacity: 1;
+    pointer-events: auto;
+}
+/* inactive */
+.infobox.inactiveInfo{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.quizFooter{
+    margin-top: 55%;
+    background-color: #fff;
+}
+@media screen and (max-width: 768px){
+    .infobox{
+        transform:translate(-50%,-50%) scale(0.8);
+    }
+    .quizbox{
+        transform:translate(-50%,-50%) scale(0.8);
+    }
+    .resultbox{
+        transform:translate(-50%,-50%) scale(0.8);
+    }
+    .quizFooter{
+        margin-top: 100%;
+    }
+}
